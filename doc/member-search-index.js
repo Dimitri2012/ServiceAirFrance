@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"com.service.service","c":"Service","l":"findAllUsersByAge(int)"},{"p":"com.service.service","c":"Service","l":"findById(int)"},{"p":"com.service.service","c":"Service","l":"save(User)","u":"save(com.service.model.User)"},{"p":"com.service.service","c":"Service","l":"Service()","u":"%3Cinit%3E()"}];updateSearchResults();
