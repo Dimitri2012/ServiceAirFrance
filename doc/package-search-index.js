@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.service.service"}];updateSearchResults();
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"fr.airfrance.controller"},{"l":"fr.airfrance.dao"},{"l":"fr.airfrance.model"},{"l":"fr.airfrance.service"},{"l":"fr.airfrance.test"}];updateSearchResults();

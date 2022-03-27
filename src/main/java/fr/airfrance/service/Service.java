@@ -25,25 +25,40 @@ public class Service {
 	@Autowired
 	private UserRepository userRepository;
 
-	
-	public User findById(int id) throws Exception {
+	/**
+	 * check if a user has this id in the base.
+	 * Then it returns the user or throws an Exception.
+	 * @param id
+	 * @return User
+	 * @throws NullPointerException
+	 */
+	public User findById(int id) throws NullPointerException {
 
 		User user = userRepository.findById(id);
 		if (user == null) {
-			throw new Exception();
+			throw new NullPointerException();
 		}
 		return userRepository.findById(id);
 
 	}
-
+	/**
+	 *  find users having a certain age in the base.
+	 * @param age
+	 * @return List {@literal <}User {@literal >}
+	 */
 	public List<User> findAllUsersByAge(int age) {
 		return userRepository.findByAge(age);
 	}
-
-	public void save(User user) throws Exception {
+	/**
+	 *  try to save a new user if it respects severals constraints.
+	 * Essentially if the user has at least eighteen and his county is France.
+	 * @param user 
+	 * @throws CountryConstraintNotRespectingException
+	 */
+	public void save(User user) throws CountryConstraintNotRespectingException {
 
 		if (!(user.getCountry().equals("France"))) {
-			throw new Exception();
+			throw new CountryConstraintNotRespectingException();
 		}
 		if (user.getNickname() == null) {
 			System.out.println(user.getNickname());

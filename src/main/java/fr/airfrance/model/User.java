@@ -32,50 +32,34 @@ public class User {
 	@Column
 	private String nickname;
 	
-	//{"nickname":"Dim","name":"Dimitri","surname":"Arches","age":"26","country":"France"}
-	//{"nickname":"Nana","name":"Vanina","surname":"Arches","age":"23","country":"France"}
-	//{"name":"Melissa","surname":"Arches","age":"28","country":"France"}
-	//{"name":"Skylar","surname":"Moreau","age":"17","country":"France"}
-	//{"name":"Skylar","surname":"Moreau","age":"19","country":"France"}
-	//{"name":"Omar","surname":"Bichr","age":"26","country":"Maroc"}
 	
 	
+	public User() { super();}
 	
-	
-	public String getNickname() {
-		return nickname;
-	}
 
-
-
-	public void setNickname(String nickname) {
-		this.nickname = nickname;
-	}
-
-
-	public User() { }
-
-	
-	
 	public User( String name, String surname, int age,String country) {
+		
 		this.name = name;
 		this.surname = surname;
 		this.age = age;
 		this.country=country;
 		
-		
-		
+	}
+	
+	public String getNickname() {
+		return nickname;
 	}
 
-
-
+	
 	public User(String nickname, String name, String surname, int age, String country) {
 		this(name,surname,age,country);
 		this.nickname=nickname;
-		
 
 	}
 	
+	public void setNickname(String nickname) {
+		this.nickname = nickname;
+	}
 	
 	public int getId() {
 		return id;

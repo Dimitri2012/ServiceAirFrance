@@ -1,1 +1,6 @@
-com.service.service
+fr.airfrance
+fr.airfrance.controller
+fr.airfrance.dao
+fr.airfrance.model
+fr.airfrance.service
+fr.airfrance.test
